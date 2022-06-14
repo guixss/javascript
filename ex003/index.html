@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de js</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            text-align:center;
+            font-weight: bolder;
+            margin-top: 200px;
+            background-image: url(imagens/espaco.jpg);
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Seu nome:</h1>
+    <script>
+       var nome= window.prompt('qual é o seu nome?')
+       document.write(`seu nome é ${nome} </br>`)
+       document.write(`seu nome tem ${nome.length} letras! </br>`)
+       document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}! </br>`)
+       document.write(`seu nome em minúsculas é ${nome.toLowerCase()}!`)
+    </script>
+</body>
+</html>

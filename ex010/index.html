@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema de multas</title>
+    <style>
+        body{
+            background-color: rgb(5, 59, 59);
+            color: white;
+            text-align: center;
+            margin: 20px;
+        }
+
+
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            margin-bottom: 45px;
+        }
+
+        img{
+            width: 400px;
+            height: 300px;
+            border-radius: 8px;
+            border-style: solid;
+            margin-top: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+    function calcular() {
+        var txtv = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p> Sua velocidade é de <strong>${vel}km/h</strong>!</p>`
+        if (vel > 60) {
+            res.innerHTML += `<p> Você foi <strong>MULTADO</strong> por excesso de velocidade!</p>`
+    } else {
+        res.innerHTML += `<p> Dirija com cuidado!</p>`
+    } }
+    </script>
+    <br>
+
+    <img src="imagens/transitob9.jpg" alt="tráfego de carros em uma grande cidade">
+</body>
+</html>

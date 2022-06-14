@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        div#area{
+            border-radius: 10px;
+            border-color: black;
+            margin: auto;
+            font-size: 18pt;
+            background-color: aqua;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+        body{
+            background-image:url('imagens/espaco.jpg') ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()">
+        não vem não!
+
+    </div>
+
+    <script>
+       function clicar() {
+           var a = window.document.getElementById('area')
+           a.innerText= 'então você é!'
+           a.style.background = 'red'
+       }
+
+       function entrar() {
+        var b = window.document.getElementById('area')
+           b.innerText= 'se clicar é gay!'
+           b.style.background= 'green'
+
+       }
+
+       function sair() {
+        var c = window.document.getElementById('area')
+           c.innerText= ' isso aí. Mete marcha, menó!'
+           c.style.background= 'purple'
+       }   
+     </script>
+</body>
+</html>
